@@ -17,10 +17,10 @@
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
-  --gray: #6c757d;
+  --gray: #FFF;
   --gray-dark: #343a40;
   --primary: #7964e9;
-  --secondary: #6c757d;
+  --secondary: #FFF;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -32,8 +32,9 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Roboto", sans-serif;
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 *,
@@ -43,7 +44,9 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -56,11 +59,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #6c757d;
+  color: #FFF;
   text-align: left;
   background-color: #282828;
 }
@@ -177,7 +182,9 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1em;
 }
 
@@ -209,7 +216,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #6c757d;
+  color: #FFF;
   text-align: left;
   caption-side: bottom;
 }
@@ -257,7 +264,9 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: inherit;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: inherit;
   line-height: inherit;
 }
@@ -536,7 +545,7 @@ mark,
 .blockquote-footer {
   display: block;
   font-size: 80%;
-  color: #6c757d;
+  color: #FFF;
 }
 
 .blockquote-footer::before {
@@ -568,7 +577,7 @@ mark,
 
 .figure-caption {
   font-size: 90%;
-  color: #6c757d;
+  color: #FFF;
 }
 
 code {
@@ -1552,7 +1561,7 @@ pre code {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #6c757d;
+  color: #FFF;
 }
 
 .table th,
@@ -1602,7 +1611,7 @@ pre code {
 }
 
 .table-hover tbody tr:hover {
-  color: #6c757d;
+  color: #FFF;
   background-color: rgba(0, 0, 0, 0.075);
 }
 
@@ -1933,7 +1942,7 @@ pre code {
 }
 
 .form-control::placeholder {
-  color: #6c757d;
+  color: #FFF;
   opacity: 1;
 }
 
@@ -1989,7 +1998,7 @@ select.form-control:focus::-ms-value {
   margin-bottom: 0;
   font-size: 1rem;
   line-height: 1.5;
-  color: #6c757d;
+  color: #FFF;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -2060,7 +2069,7 @@ textarea.form-control {
 
 .form-check-input[disabled] ~ .form-check-label,
 .form-check-input:disabled ~ .form-check-label {
-  color: #6c757d;
+  color: #FFF;
 }
 
 .form-check-label {
@@ -2345,7 +2354,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #6c757d;
+  color: #FFF;
   text-align: center;
   vertical-align: middle;
   user-select: none;
@@ -2365,13 +2374,12 @@ textarea.form-control {
 }
 
 .btn:hover {
-  color: #6c757d;
+  color: #FFF;
   text-decoration: none;
 }
 
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(11, 206, 175, 0.25);
 }
 
 .btn.disabled, .btn:disabled {
@@ -2426,8 +2434,8 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #FFF;
+  border-color: #FFF;
 }
 
 .btn-secondary:hover {
@@ -2445,8 +2453,8 @@ fieldset:disabled a.btn {
 
 .btn-secondary.disabled, .btn-secondary:disabled {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #FFF;
+  border-color: #FFF;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
@@ -2625,7 +2633,6 @@ fieldset:disabled a.btn {
   color: #212529;
   background-color: #ececec;
   border-color: #e6e6e6;
-  box-shadow: 0 0 0 0.2rem rgba(222, 222, 223, 0.5);
 }
 
 .btn-light.disabled, .btn-light:disabled {
@@ -2716,14 +2723,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-secondary {
-  color: #6c757d;
-  border-color: #6c757d;
+  color: #FFF;
+  border-color: #FFF;
 }
 
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #FFF;
+  border-color: #FFF;
 }
 
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
@@ -2731,15 +2738,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
-  color: #6c757d;
+  color: #FFF;
   background-color: transparent;
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #FFF;
+  border-color: #FFF;
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
@@ -2955,7 +2962,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:disabled, .btn-link.disabled {
-  color: #6c757d;
+  color: #FFF;
   pointer-events: none;
 }
 
@@ -3056,7 +3063,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #6c757d;
+  color: #FFF;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -3243,7 +3250,7 @@ input[type="button"].btn-block {
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
-  color: #6c757d;
+  color: #FFF;
   pointer-events: none;
   background-color: transparent;
 }
@@ -3257,7 +3264,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
   font-size: 0.875rem;
-  color: #6c757d;
+  color: #FFF;
   white-space: nowrap;
 }
 
@@ -3617,7 +3624,7 @@ input[type="button"].btn-block {
 }
 
 .custom-control-input[disabled] ~ .custom-control-label, .custom-control-input:disabled ~ .custom-control-label {
-  color: #6c757d;
+  color: #FFF;
 }
 
 .custom-control-input[disabled] ~ .custom-control-label::before, .custom-control-input:disabled ~ .custom-control-label::before {
@@ -3761,7 +3768,7 @@ input[type="button"].btn-block {
 }
 
 .custom-select:disabled {
-  color: #6c757d;
+  color: #FFF;
   background-color: #e9ecef;
 }
 
@@ -4043,7 +4050,7 @@ input[type="button"].btn-block {
 }
 
 .nav-link.disabled {
-  color: #6c757d;
+  color: #FFF;
   pointer-events: none;
   cursor: default;
 }
@@ -4067,7 +4074,7 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-link.disabled {
-  color: #6c757d;
+  color: #FFF;
   background-color: transparent;
   border-color: transparent;
 }
@@ -4730,7 +4737,7 @@ input[type="button"].btn-block {
 .breadcrumb-item + .breadcrumb-item::before {
   display: inline-block;
   padding-right: 0.5rem;
-  color: #6c757d;
+  color: #FFF;
   content: "/";
 }
 
@@ -4743,7 +4750,7 @@ input[type="button"].btn-block {
 }
 
 .breadcrumb-item.active {
-  color: #6c757d;
+  color: #FFF;
 }
 
 .pagination {
@@ -4797,7 +4804,7 @@ input[type="button"].btn-block {
 }
 
 .page-item.disabled .page-link {
-  color: #6c757d;
+  color: #FFF;
   pointer-events: none;
   cursor: auto;
   background-color: #fff;
@@ -4891,7 +4898,7 @@ a.badge-primary:focus, a.badge-primary.focus {
 
 .badge-secondary {
   color: #fff;
-  background-color: #6c757d;
+  background-color: #FFF;
 }
 
 a.badge-secondary:hover, a.badge-secondary:focus {
@@ -5237,7 +5244,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .list-group-item-action:active {
-  color: #6c757d;
+  color: #FFF;
   background-color: #e9ecef;
 }
 
@@ -5260,7 +5267,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .list-group-item.disabled, .list-group-item:disabled {
-  color: #6c757d;
+  color: #FFF;
   pointer-events: none;
   background-color: #fff;
 }
@@ -5617,7 +5624,7 @@ a.close.disabled {
   display: flex;
   align-items: center;
   padding: 0.25rem 0.75rem;
-  color: #6c757d;
+  color: #FFF;
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -5843,7 +5850,9 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5956,7 +5965,9 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6108,7 +6119,7 @@ a.close.disabled {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #6c757d;
+  color: #FFF;
 }
 
 .carousel {
@@ -6383,7 +6394,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  background-color: #FFF !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -6505,7 +6516,7 @@ button.bg-dark:focus {
 }
 
 .border-secondary {
-  border-color: #6c757d !important;
+  border-color: #FFF !important;
 }
 
 .border-success {
@@ -9421,7 +9432,9 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .text-justify {
@@ -9551,7 +9564,7 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #6c757d !important;
+  color: #FFF !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
@@ -9607,11 +9620,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-body {
-  color: #6c757d !important;
+  color: #FFF !important;
 }
 
 .text-muted {
-  color: #6c757d !important;
+  color: #FFF !important;
 }
 
 .text-black-50 {
