@@ -10014,3 +10014,19 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
+
+.all-projects-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.project-container{
+  display:flex;
+  gap:25px;
+  padding:25px;
+}
+
+.project-container img{
+  width: 500px;
+}
