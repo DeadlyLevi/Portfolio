@@ -10855,3 +10855,33 @@ h6,
     height: 300px;
     object-fit: cover;
 }
+
+.section__content {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping to prevent overflow */
+    justify-content: space-between; /* Distribute space between items */
+}
+
+.skills-container {
+    display: flex;
+    flex: 1; /* Allow columns to grow equally */
+}
+
+.skills-category {
+    flex: 1; /* Each category takes equal width */
+    margin: 0 20px; /* Space between columns */
+}
+
+.category-label {
+    font-weight: bold; /* Make the labels bold */
+    margin-bottom: 10px; /* Space between label and list */
+}
+
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+.category-item {
+    margin-bottom: 5px; /* Space between items */
+}
