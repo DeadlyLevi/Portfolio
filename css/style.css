@@ -1750,7 +1750,6 @@ pre code {
 
 .table th,
 .table td {
-    padding: 0.75rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6;
 }
@@ -1762,11 +1761,6 @@ pre code {
 
 .table tbody + tbody {
     border-top: 2px solid #dee2e6;
-}
-
-.table-sm th,
-.table-sm td {
-    padding: 0.3rem;
 }
 
 .table-bordered {
@@ -10840,7 +10834,7 @@ h6,
 .project-container {
     display: flex;
     gap: 25px;
-    padding: 25px;
+    padding: 25px 0px;
     flex-direction: column;
 }
 
@@ -10851,8 +10845,7 @@ h6,
 }
 
 .project-container img {
-    width: 500px;
-    height: 300px;
+    width: clamp(300px, 100%, 500px);
     object-fit: cover;
 }
 
@@ -10869,7 +10862,6 @@ h6,
 
 .skills-category {
     flex: 1; /* Each category takes equal width */
-    margin: 0 20px; /* Space between columns */
 }
 
 .category-label {
@@ -10884,4 +10876,64 @@ ul {
 
 .category-item {
     margin-bottom: 5px; /* Space between items */
+}
+
+.credit-card{
+    background-color: rgba(34, 34, 34, 0.9); 
+    box-shadow:0px 0px 10px rgb(70, 70, 70); 
+    padding:30px;
+    border-radius: 25px; 
+    width: clamp(325px, 90%, 760px);
+}
+
+.download-container{
+    padding-top: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+    .download-btn{
+        text-align:center;
+    }
+    .credit-card{
+       padding:20px 10px;
+    }
+    .row-custom-css{
+        justify-content: center;
+    }
+    .download-container{
+        padding-top: 15px;
+    }
+    
+    th, td {padding: 10px 10px;}
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Spaziatura tra le colonne */
+}
+
+.skills-column {
+    flex: 1 1 200px; /* Ogni colonna avrà una larghezza minima di 200px */
+    padding: 10px;
+}
+
+.skills-column h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Impostazioni per schermi più piccoli (fino a 768px) */
+@media (max-width: 768px) {
+    .skills-column {
+        flex: 1 1 45%; /* Due colonne su schermi più piccoli (45% ciascuna con un po' di spazio tra di loro) */
+    }
+}
+
+/* Impostazioni per schermi molto piccoli (fino a 480px) */
+@media (max-width: 480px) {
+    .skills-column {
+        flex: 1 1 100%; /* Una colonna su schermi molto piccoli (smartphone) */
+    }
 }

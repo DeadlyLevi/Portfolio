@@ -72,15 +72,15 @@
     <!-- Header Start -->
     <div class="container-fluid d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #282828 100%), url('img/home_wallpaper.jpg');background-size: cover;">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center row-custom-css">
                 <div class="col-lg-2"></div>
-                <div class="col-lg-8 text-center text-lg-left" style="background-color: rgba(34, 34, 34, 0.9); box-shadow:0px 0px 10px rgb(70, 70, 70); padding:30px;border-radius: 25px;">
+                <div class="col-lg-8 text-center text-lg-left credit-card">
                     <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase mb-2" style="-webkit-text-stroke: 2px #ffffff; color:transparent;">Levend Abdyli</h1>
+                    <h1 class="display-3 text-uppercase mb-2" style="-webkit-text-stroke: 2px #ffffff; color:transparent;font-size:clamp(32px, 5vw ,4.5rem)">Levend Abdyli</h1>
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">Game Programmer, Programming Teacher</div>
-                    <div class="d-flex align-items-center justify-content-between pt-5">
-                        <a href="assets/CV_Levend_Abdyli.pdf" class="btn btn-outline-light mr-5" download="CV_Levend_Abdyli.pdf">Download CV</a>
+                    <div class="download-container">
+                        <a href="assets/CV_Levend_Abdyli.pdf" class="btn btn-outline-light download-btn" download="CV_Levend_Abdyli.pdf">Download CV</a>
                     </div>
                 </div>
                 <div class="col-lg-2"></div>
@@ -94,7 +94,7 @@
     <div class="container-fluid py-5" id="about">
         <div class="container py-5 mt-2">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:96px !important;">About</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:clamp(50px, 5vw, 96px) !important;">About</h1>
                 <!--<h1 class="position-absolute text-uppercase">About Me</h1>-->
             </div>
             <div class="row align-items-center">
@@ -126,7 +126,7 @@
     <div class="container-fluid py-5" id="qualification">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:96px !important;">Quality</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:clamp(50px, 5vw, 96px) !important;">Quality</h1>
             </div>
             <div class="row">
                 <div class="col-lg-6">
@@ -182,110 +182,115 @@
     <div class="container-fluid py-5" id="skill">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:96px !important;">Skills</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:clamp(50px, 5vw, 96px) !important;">Skills</h1>
             </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">C++</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">C#</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">C</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Unreal Engine 5</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Unity</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">HLSL</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="row align-items-center">-->
+<!--                <div class="col-md-6">-->
+<!--                    <div class="skill mb-4">-->
+<!--                        <div class="d-flex justify-content-between">-->
+<!--                            <h6 class="font-weight-bold">C++</h6>-->
+<!--                            <h6 class="font-weight-bold">95%</h6>-->
+<!--                        </div>-->
+<!--                        <div class="progress">-->
+<!--                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="skill mb-4">-->
+<!--                        <div class="d-flex justify-content-between">-->
+<!--                            <h6 class="font-weight-bold">C#</h6>-->
+<!--                            <h6 class="font-weight-bold">95%</h6>-->
+<!--                        </div>-->
+<!--                        <div class="progress">-->
+<!--                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="skill mb-4">-->
+<!--                        <div class="d-flex justify-content-between">-->
+<!--                            <h6 class="font-weight-bold">C</h6>-->
+<!--                            <h6 class="font-weight-bold">80%</h6>-->
+<!--                        </div>-->
+<!--                        <div class="progress">-->
+<!--                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-6">-->
+<!--                    <div class="skill mb-4">-->
+<!--                        <div class="d-flex justify-content-between">-->
+<!--                            <h6 class="font-weight-bold">Unreal Engine 5</h6>-->
+<!--                            <h6 class="font-weight-bold">90%</h6>-->
+<!--                        </div>-->
+<!--                        <div class="progress">-->
+<!--                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="skill mb-4">-->
+<!--                        <div class="d-flex justify-content-between">-->
+<!--                            <h6 class="font-weight-bold">Unity</h6>-->
+<!--                            <h6 class="font-weight-bold">95%</h6>-->
+<!--                        </div>-->
+<!--                        <div class="progress">-->
+<!--                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="skill mb-4">-->
+<!--                        <div class="d-flex justify-content-between">-->
+<!--                            <h6 class="font-weight-bold">HLSL</h6>-->
+<!--                            <h6 class="font-weight-bold">80%</h6>-->
+<!--                        </div>-->
+<!--                        <div class="progress">-->
+<!--                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
             <div class="text-center col-lg-12">
-                <h6 class="text-uppercase" style="font-size:26px;">Other Skills:</h6>
-                <section class="section skills" data-sr="" data-sr-id="2" style="visibility: visible; opacity: 1; transition: all, opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1);">
+                <section class="section skills" data-sr="" data-sr-id="2" style="font-size:clamp(16px, 4vw, 24px);visibility: visible; opacity: 1; transition: all, opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1);">
                     <div class="section__content">
                         <div class="skills-container">
-                            <div class="skills-category">
-                                <div class="category-label">Languages</div>
+                            <div class="skills-column">
+                                <h3>Languages</h3>
                                 <ul>
-                                    <li class="category-item">HTML</li>
-                                    <li class="category-item">CSS</li>
-                                    <li class="category-item">Java</li>
-                                    <li class="category-item">PHP</li>
-                                    <li class="category-item">Python</li>
+                                    <li>C++</li>
+                                    <li>C#</li>
+                                    <li>C</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Java</li>
+                                    <li>PHP</li>
+                                    <li>Python</li>
                                 </ul>
                             </div>
-                            <div class="skills-category">
-                                <div class="category-label">Tools</div>
+
+                            <div class="skills-column">
+                                <h3>Tools</h3>
                                 <ul>
-                                    <li class="category-item">Rider</li>
-                                    <li class="category-item">Visual Studio</li>
-                                    <li class="category-item">Git</li>
-                                    <li class="category-item">IntelliJ</li>
-                                    <li class="category-item">Blender</li>
-                                    <li class="category-item">Gaea</li>
-                                    <li class="category-item">Aseprite</li>
-                                    <li class="category-item">Photoshop</li>
-                                    <li class="category-item">Ableton</li>
+                                    <li>Rider</li>
+                                    <li>Visual Studio</li>
+                                    <li>Git</li>
+                                    <li>IntelliJ</li>
+                                    <li>Blender</li>
+                                    <li>Gaea</li>
+                                    <li>Aseprite</li>
+                                    <li>Photoshop</li>
+                                    <li>Ableton</li>
                                 </ul>
                             </div>
-                            <div class="skills-category">
-                                <div class="category-label">Unreal Engine 5</div>
+
+                            <div class="skills-column">
+                                <h3>Unreal Engine 5</h3>
                                 <ul>
-                                    <li class="category-item">Slate UI</li>
-                                    <li class="category-item">Gameplay Ability System</li>
+                                    <li>Slate UI</li>
+                                    <li>Gameplay Ability System</li>
                                 </ul>
                             </div>
-                            <div class="skills-category">
-                                <div class="category-label">Unity</div>
+
+                            <div class="skills-column">
+                                <h3>Unity</h3>
                                 <ul>
-                                    <li class="category-item">ML-Agents</li>
-                                    <li class="category-item">DOTS</li>
-                                    <li class="category-item">Yarn</li>
+                                    <li>ML-Agents</li>
+                                    <li>DOTS</li>
+                                    <li>Yarn</li>
                                 </ul>
                             </div>
                         </div>
@@ -299,7 +304,7 @@
     <div class="container-fluid pt-5 pb-3" id="portfolio">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:96px !important;">Projects</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:clamp(50px, 5vw, 96px) !important;">Projects</h1>
             </div>
             <div class="row">
                 <div class="col-12 text-center mb-2">
@@ -315,10 +320,10 @@
             <div class="row portfolio-container">
                 
                 <div class="project-container portfolio-item UE5 Cplusplus">
-                    <a href="https://eventhorizonschool.itch.io/faint-light" target="_blank">
+                    <a href="https://eventhorizonschool.itch.io/faint-light" target="_blank" style="flex: 50%;">
                         <img src="img/FaintLight.png" alt="Faint Light">
                     </a>
-                    <div class="text-container">
+                    <div class="text-container" style="flex: 50%;">
                         <h3>Faint Light</h3>
                         <p class="text"><span class="thin-text">Faintlight is a third-person horror puzzle game where I worked as a solo programmer. Key contributions include:</span></p>
                         <ul>
@@ -329,10 +334,25 @@
                 </div>
 
                 <div class="project-container portfolio-item Unity Csharp">
-                    <a target="_blank">
+                    <a href="https://eventhorizonschool.itch.io/spelldraw/devlog/377761/patch-notes-023" target="_blank" style="flex: 50%;">
+                        <img src="img/Spelldraw.png" alt="Spelldraw">
+                    </a>
+                    <div class="text-container" style="flex: 50%;">
+                        <h3>Spelldraw</h3>
+                        <p class="text"><span class="thin-text">Spelldraw is an FPS game set in a world with wizards and dungeons. Key contributions include:</span></p>
+                        <ul>
+                            <li><strong>-System Programmer</strong> focused on <strong>enemy AI</strong> and <strong>boss fights</strong>.</li>
+                            <li>-Transitioned to <strong>Technical Artist</strong> role.</li>
+                            <li>-Primarily worked on <strong>VFX</strong> and <strong>SFX</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-container portfolio-item Unity Csharp">
+                    <a target="_blank" style="flex: 50%;">
                         <img src="img/SpaceShooter.gif" alt="Space Shooter">
                     </a>
-                    <div class="text-container">
+                    <div class="text-container" style="flex: 50%;">
                         <h3>Space Shooter</h3>
                         <p class="text"><span class="thin-text">This space shooter project was created entirely by me for a PlayStation contest. Key contributions include:</span></p>
                         <ul>
@@ -341,21 +361,6 @@
                             <li><strong>-Built a quick character controller</strong> for player movement.</li>
                         </ul>
                         <p><span class="thin-text">Definitely one of my favorite projects!</span></p>
-                    </div>
-                </div>
-
-                <div class="project-container portfolio-item Unity Csharp">
-                    <a href="https://eventhorizonschool.itch.io/spelldraw/devlog/377761/patch-notes-023" target="_blank">
-                        <img src="img/Spelldraw.png" alt="Spelldraw">
-                    </a>
-                    <div class="text-container">
-                        <h3>Spelldraw</h3>
-                        <p class="text"><span class="thin-text">Spelldraw is an FPS game set in a world with wizards and dungeons. Key contributions include:</span></p>
-                        <ul>
-                            <li><strong>-System Programmer</strong> focused on <strong>enemy AI</strong> and <strong>boss fights</strong>.</li>
-                            <li>-Transitioned to <strong>Technical Artist</strong> role.</li>
-                            <li>-Primarily worked on <strong>VFX</strong> and <strong>SFX</strong>.</li>
-                        </ul>
                     </div>
                 </div>
                 
@@ -368,7 +373,7 @@
     <!--    <div class="container-fluid py-5" id="testimonial">-->
     <!--        <div class="container">-->
     <!--            <div class="position-relative d-flex align-items-center justify-content-center">-->
-    <!--                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:96px !important;">Review</h1>-->
+    <!--                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:clamp(50px, 5vw, 96px) !important;">Review</h1>-->
     <!--            </div>-->
     <!--            <div class="row justify-content-center">-->
     <!--                <div class="col-lg-8">-->
@@ -405,7 +410,7 @@
     <!--    <div class="container-fluid py-5" id="contact">-->
     <!--        <div class="container">-->
     <!--            <div class="position-relative d-flex align-items-center justify-content-center">-->
-    <!--                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:96px !important;">Contact Me</h1>-->
+    <!--                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:clamp(50px, 5vw, 96px) !important;">Contact Me</h1>-->
     <!--            </div>-->
     <!--            <div class="row justify-content-center">-->
     <!--                <div class="col-lg-8">-->
