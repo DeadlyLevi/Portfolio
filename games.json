@@ -1,0 +1,27 @@
+[
+    {
+      "id": "0",
+      "immagine": "img/zed.jpg",
+      "titolo": "Game 0",
+      "contenuto": "<h2>Title of Game 0</h2><p>Lorem ipsum dolor sit amet consectetur <b>adipisicing elit</b>. Fugiat, voluptate facilis? <i>Non numquam earum ex accusantium</i> iusto <span>quibusdam temporibus</span> ad, dicta labore asperiores maiores rerum aspernatur illum! Ipsam, consequuntur iure.</p><img src='img/zed.jpg' alt='game.png'><h2>Title of Game 0 - Part 2</h2><p>Lorem ipsum dolor sit amet consectetur <b>adipisicing elit</b>. Fugiat, voluptate facilis? <i>Non numquam earum ex accusantium</i> iusto <span>quibusdam temporibus</span> ad, dicta labore asperiores maiores rerum aspernatur illum! Ipsam, consequuntur iure.</p><pre><code class=\"language-rust\">pub fn render_parallel(&self,world: &(dyn Hittable + Sync + Send),image_data: &mut Vec&lt;u8&gt;) {\nfor j in 0..self.height() {for i in 0..self.width() {let pixel_color = (0..self.samples).into_par_iter().map(|_| {let ray = self.get_ray(i, j);ray.color(world, self.max_depth)}).reduce(|| (Vec3::zero()), |a, b| (a + b));self.write_pixel(&pixel_color, self.samples, image_data, (i, j));}}}</code></pre>"
+    },
+    {
+      "id": "1",
+      "immagine": "img/zed.jpg",
+      "titolo": "Game 1",
+      "contenuto": "<h2>Title of Game 1</h2><p>Lorem ipsum dolor sit amet consectetur <b>adipisicing elit</b>. Fugiat, voluptate facilis? <i>Non numquam earum ex accusantium</i> iusto <span>quibusdam temporibus</span> ad, dicta labore asperiores maiores rerum aspernatur illum! Ipsam, consequuntur iure.</p><img src='img/zed.jpg' alt='game.png'><h2>Title of Game 1 - Part 2</h2><p>Lorem ipsum dolor sit amet consectetur <b>adipisicing elit</b>. Fugiat, voluptate facilis? <i>Non numquam earum ex accusantium</i> iusto <span>quibusdam temporibus</span> ad, dicta labore asperiores maiores rerum aspernatur illum! Ipsam, consequuntur iure.</p><pre><code class=\"language-rust\">pub fn render_parallel(&self,world: &(dyn Hittable + Sync + Send),image_data: &mut Vec&lt;u8&gt;) {\nfor j in 0..self.height() {for i in 0..self.width() {let pixel_color = (0..self.samples).into_par_iter().map(|_| {let ray = self.get_ray(i, j);ray.color(world, self.max_depth)}).reduce(|| (Vec3::zero()), |a, b| (a + b));self.write_pixel(&pixel_color, self.samples, image_data, (i, j));}}}</code></pre>"
+    },
+    {
+      "id": "2",
+      "immagine": "img/zed.jpg",
+      "titolo": "Game 2",
+      "contenuto": "<h2>Title of Game 2</h2><p>Lorem ipsum dolor sit amet consectetur <b>adipisicing elit</b>. Fugiat, voluptate facilis? <i>Non numquam earum ex accusantium</i> iusto <span>quibusdam temporibus</span> ad, dicta labore asperiores maiores rerum aspernatur illum! Ipsam, consequuntur iure.</p><img src='img/zed.jpg' alt='game.png'><h2>Title of Game 2 - Part 2</h2><p>Lorem ipsum dolor sit amet consectetur <b>adipisicing elit</b>. Fugiat, voluptate facilis? <i>Non numquam earum ex accusantium</i> iusto <span>quibusdam temporibus</span> ad, dicta labore asperiores maiores rerum aspernatur illum! Ipsam, consequuntur iure.</p><pre><code class=\"language-rust\">pub fn render_parallel(&self,world: &(dyn Hittable + Sync + Send),image_data: &mut Vec&lt;u8&gt;) {\nfor j in 0..self.height() {for i in 0..self.width() {let pixel_color = (0..self.samples).into_par_iter().map(|_| {let ray = self.get_ray(i, j);ray.color(world, self.max_depth)}).reduce(|| (Vec3::zero()), |a, b| (a + b));self.write_pixel(&pixel_color, self.samples, image_data, (i, j));}}}</code></pre>"
+    },
+    {
+      "id": "3",
+      "immagine": "img/zed.jpg",
+      "titolo": "Game 3",
+      "contenuto": "<h2>Title of Game 3</h2><p>Lorem ipsum dolor sit amet consectetur <b>adipisicing elit</b>. Fugiat, voluptate facilis? <i>Non numquam earum ex accusantium</i> iusto <span>quibusdam temporibus</span> ad, dicta labore asperiores maiores rerum aspernatur illum! Ipsam, consequuntur iure.</p><img src='img/zed.jpg' alt='game.png'><h2>Title of Game 3 - Part 2</h2><p>Lorem ipsum dolor sit amet consectetur <b>adipisicing elit</b>. Fugiat, voluptate facilis? <i>Non numquam earum ex accusantium</i> iusto <span>quibusdam temporibus</span> ad, dicta labore asperiores maiores rerum aspernatur illum! Ipsam, consequuntur iure.</p><pre><code class=\"language-rust\">pub fn render_parallel(&self,world: &(dyn Hittable + Sync + Send),image_data: &mut Vec&lt;u8&gt;) {\nfor j in 0..self.height() {for i in 0..self.width() {let pixel_color = (0..self.samples).into_par_iter().map(|_| {let ray = self.get_ray(i, j);ray.color(world, self.max_depth)}).reduce(|| (Vec3::zero()), |a, b| (a + b));self.write_pixel(&pixel_color, self.samples, image_data, (i, j));}}}</code></pre>"
+    }
+  ]
+  

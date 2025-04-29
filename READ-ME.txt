@@ -1,6 +1,0 @@
-PALETTE:
-#0A0908 -> Blu
-#161E22 -> Grigio Scuro
-#22333B -> Verde Scuro
-#868A88 -> Grigio Chiaro
-#EAE0D5 -> bianco/rosa carne

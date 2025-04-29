@@ -1,514 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+        
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
 
-<head>
-    <meta charset="utf-8">
-    <title>Portfolio Levend Abdyli</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <!--<link href="lib/animate/animate.min.css" rel="stylesheet">-->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <!-- Google Web Fonts -->
-    <!--<link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light nav-sticky">
+            <div class="container-fluid">
+                <!-- ADD IMAGE HERE -->
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="img/about.jpg" alt="Profile" style="width:50px; height:50px; border-radius:50%; object-fit:cover; margin-right:10px;">
+                    Levend Abdyli
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Levend Abdyli</span></h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Quality</a>
-                <a href="#skill" class="nav-item nav-link">Skill</a>
-                <a href="#portfolio" class="nav-item nav-link">Projects</a>
-            </div>
-            <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>        
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#skills" class="nav-item nav-link">Skills</a>
+                        <a href="#experience" class="nav-item nav-link">Experience</a>
+                        <a href="#project" class="nav-item nav-link">Project</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Video Modal End -->
-
-
-    <!-- Header Start -->
-    <div class="container-fluid d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, #282828 100%), url('img/home_wallpaper.jpg');background-size: cover;">
-        <div class="container">
-            <div class="row align-items-center row-custom-css">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-8 text-center text-lg-left credit-card">
-                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase mb-2" style="-webkit-text-stroke: 2px #ffffff; color:transparent;font-size:clamp(32px, 5vw ,4.5rem)">Levend Abdyli</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Game Programmer, Programming Teacher, System and AI designer</div>
-                    <div class="download-container">
-                        <a href="assets/CV_Levend_Abdyli.pdf" class="btn btn-outline-light download-btn" download="CV_Levend_Abdyli.pdf">Download CV</a>
-                    </div>
-                </div>
-                <div class="col-lg-2"></div>
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container py-5 mt-2">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:clamp(50px, 5vw, 96px) !important;">About</h1>
-                <!--<h1 class="position-absolute text-uppercase">About Me</h1>-->
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 my-3">
-                    <img class="img-fluid w-100" src="img/profile_picture.jpg" alt="" style="border-radius:50%">
-                </div>
-                <div class="col-lg-7" style="font-size:22px !important;">
-                    <p>I'm Levend Abdyli, a <span class="text-primary">system & AI designer</span> who loves creating complex, efficient systems that are intuitive and innovative. My focus is on continuously refining my skills and pushing the limits of game development.</p>
-                    <div class="row mb-3">
-                        <div class="col-sm-12" style="font-size:16px !important;"><p>Phone: <a href="tellto:+393515303370"><span class="text-primary">+39 351 530 3370</span></a></p></div>
-                        <div class="col-sm-12" style="font-size:16px !important;"><p>Email: <a href="mailto:levendabdyli1355@gmail.com"><span class="text-primary">levend.abdyli@gmail.com</span></a></p></div>
-                        <!--<div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>-->
-                    </div>
-                    <div class="d-flex mb-4" style="column-gap: 10px;">
-                        <a class="btn btn-light btn-social mr-2" href="https://github.com/DeadlyLevi/Portfolio" target="_blank"><i class="fab fa-brands fa-github"></i></a>
-                        <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/levendabdyli/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-light btn-social" href="https://www.instagram.com/levend.abdyli/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <!--<a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
-                    <a href="" class="btn btn-outline-primary">Learn More</a>-->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:clamp(50px, 5vw, 96px) !important;">Quality</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Experience</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Game Programming Teacher</h5>
-                            <p class="mb-2"><strong>Event Horizon School</strong> | <small>October 2021 – Present</small></p>
-                            <p>
-                                I mentor students through several stages of game creation as a Professional Game Programming Teacher at Event Horizon School,
-                                concentrating on <span class="text-primary">C++</span> and <span class="text-primary">C#</span>. I supervise large projects intended for publishers and mentor advanced students on projects involving <span class="text-primary">console game development</span>.
-                                I focus on <span class="text-primary">AI</span>, <span class="text-primary">project management</span>, and <span class="text-primary">design patterns</span> while teaching the foundations of programming and <span class="text-primary">mobile game development</span>.
-                                In addition, I tutor students in <span class="text-primary">object-oriented design</span> and <span class="text-primary">game mechanics</span>, facilitating their teamwork on 3D/2D art and game design projects.
-                            </p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Game Programmer</h5>
-                            <p class="mb-2"><strong>Safe Place Studio</strong> | <small>2021 - Present</small></p>
-                            <p>
-                                I created adaptable <span class="text-primary">artificial intelligence (AI)</span> solutions at Safe Place Studio with intuitive <span class="text-primary">user interfaces</span> that enable dynamic customization of intricate behaviors for efficient AI management.
-                                Additionally, I created <span class="text-primary">dynamic asset management tools</span> that handled dependencies and were easily included into project hierarchies.
-                                In addition, I designed <span class="text-primary">user-friendly UI</span> and <span class="text-primary">HUD components</span> with visual cues to improve usability and maximize system efficiency by utilizing effective <span class="text-primary">algorithms</span> to control behaviors, visual components, and settings.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Event Horizon School – Game Programming</h5>
-                            <p class="mb-2"><strong>Padova, Italy</strong> | <small>3 years</small></p>
-                            <p></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">I.T.C.S. Silvio Ceccato - Informatics</h5>
-                            <p class="mb-2"><strong>Vicenza, Italy</strong> | <small>5 years</small></p>
-                            <p></p>
+        
+        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about" style="margin-top:150px;">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="about-content">
+                            <div class="section-header text-center">
+                                <p>ABOUT me</p>
+                                <h2>10 Years Experience</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    I'm Levend Abdyli, a system & AI designer who loves creating complex, efficient systems that are intuitive and innovative. My focus is on continuously refining my skills and pushing the limits of game development.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Qualification End -->
 
+        
+        <!-- About End -->
+        
+        
+        
+        
+         
+         
+        <!-- project Start -->
+        <div class="project" id="project">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                  <p>Projects</p>
+                  <h2>All my works</h2>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-md-6 mb-4">
+                    <div class="project-item" style="background-image: url('img/zed.jpg')">
+                      <div class="w-100 p-3 translated-multicolor" style="height: 45%;display: flex;flex-direction: column;justify-content: space-around;position:absolute;z-index: 11;">
+                        <div class="row mb-3 align-items-center">
+                          <div class="col-5 text-center">
+                            <img src="img/lol.png" alt="Logo" class="img-fluid" style="max-width: 100px;">
+                          </div>
+                          <div class="col-7">
+                            <p class="mb-0 text-white ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          </div>
+                        </div>
+                        <div class="row align-items-center">
+                          <div class="col-5 text-center">
+                            <p class="mb-0 text-white small">30.11.2022</p>
+                          </div>
+                          <div class="col-6 text-end ml-4">
+                            <a class="card-btn" href="game.html?game=0">MORE GAME INFO</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-    <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:clamp(50px, 5vw, 96px) !important;">Skills</h1>
+                  <div class="col-12 col-md-6 mb-4">
+                    <div class="project-item" style="background-image: url('img/zed.jpg')">
+                      <div class="w-100 p-3 translated-multicolor" style="height: 45%;display: flex;flex-direction: column;justify-content: space-around;position:absolute;z-index: 11;">
+                        <div class="row mb-3 align-items-center">
+                          <div class="col-5 text-center">
+                            <img src="img/lol.png" alt="Logo" class="img-fluid" style="max-width: 100px;">
+                          </div>
+                          <div class="col-7">
+                            <p class="mb-0 text-white ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          </div>
+                        </div>
+                        <div class="row align-items-center">
+                          <div class="col-5 text-center">
+                            <p class="mb-0 text-white small">30.11.2022</p>
+                          </div>
+                          <div class="col-6 text-end ml-4">
+                            <a class="card-btn" href="game.html?game=1">MORE GAME INFO</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-4">
+                      <div class="project-item" style="background-image: url('img/zed.jpg')">
+                        <div class="w-100 p-3 translated-multicolor" style="height: 45%;display: flex;flex-direction: column;justify-content: space-around;position:absolute;z-index: 11;">
+                          <div class="row mb-3 align-items-center">
+                            <div class="col-5 text-center">
+                              <img src="img/lol.png" alt="Logo" class="img-fluid" style="max-width: 100px;">
+                            </div>
+                            <div class="col-7">
+                              <p class="mb-0 text-white ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                          </div>
+                          <div class="row align-items-center">
+                            <div class="col-5 text-center">
+                              <p class="mb-0 text-white small">30.11.2022</p>
+                            </div>
+                            <div class="col-6 text-end ml-4">
+                              <a class="card-btn" href="game.html?game=2">MORE GAME INFO</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="col-12 col-md-6 mb-4">
+                      <div class="project-item" style="background-image: url('img/zed.jpg')">
+                        <div class="w-100 p-3 translated-multicolor" style="height: 45%;display: flex;flex-direction: column;justify-content: space-around;position:absolute;z-index: 11;">
+                          <div class="row mb-3 align-items-center">
+                            <div class="col-5 text-center">
+                              <img src="img/lol.png" alt="Logo" class="img-fluid" style="max-width: 100px;">
+                            </div>
+                            <div class="col-7">
+                              <p class="mb-0 text-white ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                          </div>
+                          <div class="row align-items-center">
+                            <div class="col-5 text-center">
+                              <p class="mb-0 text-white small">30.11.2022</p>
+                            </div>
+                            <div class="col-6 text-end ml-4">
+                              <a class="card-btn" href="game.html?game=3">MORE GAME INFO</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
-<!--            <div class="row align-items-center">-->
-<!--                <div class="col-md-6">-->
-<!--                    <div class="skill mb-4">-->
-<!--                        <div class="d-flex justify-content-between">-->
-<!--                            <h6 class="font-weight-bold">C++</h6>-->
-<!--                            <h6 class="font-weight-bold">95%</h6>-->
-<!--                        </div>-->
-<!--                        <div class="progress">-->
-<!--                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="skill mb-4">-->
-<!--                        <div class="d-flex justify-content-between">-->
-<!--                            <h6 class="font-weight-bold">C#</h6>-->
-<!--                            <h6 class="font-weight-bold">95%</h6>-->
-<!--                        </div>-->
-<!--                        <div class="progress">-->
-<!--                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="skill mb-4">-->
-<!--                        <div class="d-flex justify-content-between">-->
-<!--                            <h6 class="font-weight-bold">C</h6>-->
-<!--                            <h6 class="font-weight-bold">80%</h6>-->
-<!--                        </div>-->
-<!--                        <div class="progress">-->
-<!--                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-6">-->
-<!--                    <div class="skill mb-4">-->
-<!--                        <div class="d-flex justify-content-between">-->
-<!--                            <h6 class="font-weight-bold">Unreal Engine 5</h6>-->
-<!--                            <h6 class="font-weight-bold">90%</h6>-->
-<!--                        </div>-->
-<!--                        <div class="progress">-->
-<!--                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="skill mb-4">-->
-<!--                        <div class="d-flex justify-content-between">-->
-<!--                            <h6 class="font-weight-bold">Unity</h6>-->
-<!--                            <h6 class="font-weight-bold">95%</h6>-->
-<!--                        </div>-->
-<!--                        <div class="progress">-->
-<!--                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="skill mb-4">-->
-<!--                        <div class="d-flex justify-content-between">-->
-<!--                            <h6 class="font-weight-bold">HLSL</h6>-->
-<!--                            <h6 class="font-weight-bold">80%</h6>-->
-<!--                        </div>-->
-<!--                        <div class="progress">-->
-<!--                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
+        </div>
+        <!-- project End -->
+        
+        <!-- Service Start -->
+        <div class="service" id="skills">
+            <div class="container">
+
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Skills</p>
+                </div>
+
+                <div class="row">
+                    <p>Clowns</p>
+                    <img src="icons/cplusplus.svg" alt="C++ Logo" width="70" height="70">
+                </div>
+                <div class="row">
+                    <p>Clowns</p>
+                    <img src="icons/cplusplus.svg" alt="C++ Logo" width="70" height="70">
+                </div>
+                <div class="row">
+                    <p>Clowns</p>
+                    <img src="icons/cplusplus.svg" alt="C++ Logo" width="70" height="70">
+                </div>
+
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container copyright">
+                    <p>&copy; <a href="#">Portfolio</a>, All Right Reserved | Designed By <a href="https://htmlcodex.com">Levend Abdyli</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</html>
+
+<!--&lt;!&ndash; Experience Start &ndash;&gt;-->
+<!--<div class="experience" id="experience">-->
+<!--    <div class="container">-->
+<!--        <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">-->
+<!--            <p>My Resume</p>-->
+<!--            <h2>Working Experience</h2>-->
+<!--        </header>-->
+<!--        <div class="timeline">-->
+<!--            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">-->
+<!--                <div class="timeline-text">-->
+<!--                    <div class="timeline-date">2045 - 2050</div>-->
+<!--                    <h2>Web Developer</h2>-->
+<!--                    <h4>Soft Agency, San Francisco, CA</h4>-->
+<!--                    <p>-->
+<!--                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.-->
+<!--                    </p>-->
 <!--                </div>-->
 <!--            </div>-->
-            <div class="text-center col-lg-12">
-                <section class="section skills" data-sr="" data-sr-id="2" style="font-size:clamp(16px, 4vw, 24px);visibility: visible; opacity: 1; transition: all, opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1);">
-                    <div class="section__content">
-                        <div class="skills-container">
-                            <div class="skills-column">
-                                <h3>Languages</h3>
-                                <ul>
-                                    <li>C++</li>
-                                    <li>C#</li>
-                                    <li>C</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Java</li>
-                                    <li>PHP</li>
-                                    <li>Python</li>
-                                </ul>
-                            </div>
-
-                            <div class="skills-column">
-                                <h3>Tools</h3>
-                                <ul>
-                                    <li>Rider</li>
-                                    <li>Visual Studio</li>
-                                    <li>Git</li>
-                                    <li>IntelliJ</li>
-                                    <li>Blender</li>
-                                    <li>Gaea</li>
-                                    <li>Aseprite</li>
-                                    <li>Photoshop</li>
-                                    <li>Ableton</li>
-                                </ul>
-                            </div>
-
-                            <div class="skills-column">
-                                <h3>Unreal Engine 5</h3>
-                                <ul>
-                                    <li>Slate UI</li>
-                                    <li>Gameplay Ability System</li>
-                                </ul>
-                            </div>
-
-                            <div class="skills-column">
-                                <h3>Unity</h3>
-                                <ul>
-                                    <li>ML-Agents</li>
-                                    <li>DOTS</li>
-                                    <li>Yarn</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:clamp(50px, 5vw, 96px) !important;">Projects</h1>
-            </div>
-            
-            <div class="row-block">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".UE5">Unreal Engine 5</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".Unity">Unity</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".Cplusplus">C++</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".Csharp">C#</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="all-projects-container">
-
-                <div class="single-projects-container">
-                    <div class="img-container">
-                        <a href="https://eventhorizonschool.itch.io/faint-light" target="_blank">
-                            <img src="img/FaintLight.png" alt="Faint Light">
-                        </a>
-                    </div>
-                    <div class="text-container">
-                        <h3>Faint Light</h3>
-                        <p class="text"><span class="thin-text">Faintlight is a third-person horror puzzle game where I worked as a solo programmer. Key contributions include:</span></p>
-                        <ul>
-                            <li><strong>-Developed</strong> a <span class="text-primary">dynamic system</span> for handling <span class="text-primary">puzzles</span> and scene <span class="text-primary">interactions</span>.</li>
-                            <li><strong>-Implemented</strong> advanced <span class="text-primary">camera controls</span> and <span class="text-primary">light effects</span> to enhance the atmosphere.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="single-projects-container">
-                    <div class="img-container">
-                        <a href="https://eventhorizonschool.itch.io/the-still-palace" target="_blank" style="flex: 50%;">
-                            <img src="img/TheStillPalace.gif" alt="The Still Palace">
-                        </a>
-                    </div>
-                    <div class="text-container">
-                        <h3>The Still Palace</h3>
-                        <p class="text"><span class="thin-text">The Still Palace is a puzzle adventure horror game, narrative-driven and full of eerie atmosphere. Key contributions include:</span></p>
-                        <ul>
-                            <li><strong>-Developed the interaction system</strong> for <span class="text-primary">puzzle mechanics</span> and <span class="text-primary">narrative progression</span>.</li>
-                            <li><strong>-Worked on graphical aspects</strong>, including <span class="text-primary">visual effects</span> and <span class="text-primary">environmental enhancements</span>.</li>
-                        </ul>
-                        <p><span class="thin-text">This project remains one of my favorites!</span></p>
-                    </div>
-                </div>
-
-                <div class="single-projects-container">
-                    <div class="img-container">
-                        <a href="https://eventhorizonschool.itch.io/spelldraw/devlog/377761/patch-notes-023" target="_blank" style="flex: 50%;">
-                            <img src="img/Spelldraw.png" alt="Spelldraw">
-                        </a>
-                    </div>
-                    <div class="text-container">
-                        <h3>Spelldraw</h3>
-                        <p class="text"><span class="thin-text">Spelldraw is an FPS game set in a world with wizards and dungeons. Key contributions include:</span></p>
-                        <ul>
-                            <li><strong>-System Programmer</strong> focused on <span class="text-primary">enemy AI</span> and <span class="text-primary">boss fights</span>.</li>
-                            <li>-Transitioned to <strong>Technical Artist</strong> role.</li>
-                            <li>-Primarily worked on <strong><span class="text-primary">VFX</span></strong> and <strong><span class="text-primary">SFX</span></strong>.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="single-projects-container">
-                    <div class="img-container">
-                        <a target="_blank" style="flex: 50%;">
-                            <img src="img/SpaceShooter.gif" alt="Space Shooter">
-                        </a>
-                    </div>
-                    <div class="text-container">
-                        <h3>Space Shooter</h3>
-                        <p class="text"><span class="thin-text">This space shooter project was created entirely by me for a PlayStation contest. Key contributions include:</span></p>
-                        <ul>
-                            <li><strong>-Developed AI</strong> for the <span class="text-primary">Rayquaza character</span> in <span class="text-primary">Unity</span>.</li>
-                            <li><strong>-Utilized Aseprite</strong> for creating <span class="text-primary">sprites</span> and <span class="text-primary">animations</span>.</li>
-                            <li><strong>-Built a quick</strong> <span class="text-primary">character controller</span> for player movement.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio End -->
-
-    <!-- Testimonial Start -->
-    <!--    <div class="container-fluid py-5" id="testimonial">-->
-    <!--        <div class="container">-->
-    <!--            <div class="position-relative d-flex align-items-center justify-content-center">-->
-    <!--                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:clamp(50px, 5vw, 96px) !important;">Review</h1>-->
-    <!--            </div>-->
-    <!--            <div class="row justify-content-center">-->
-    <!--                <div class="col-lg-8">-->
-    <!--                    <div class="owl-carousel testimonial-carousel">-->
-    <!--                        <div class="text-center">-->
-    <!--                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>-->
-    <!--                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>-->
-    <!--                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">-->
-    <!--                            <h5 class="font-weight-bold m-0">Client Name</h5>-->
-    <!--                            <span>Profession</span>-->
-    <!--                        </div>-->
-    <!--                        <div class="text-center">-->
-    <!--                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>-->
-    <!--                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>-->
-    <!--                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">-->
-    <!--                            <h5 class="font-weight-bold m-0">Client Name</h5>-->
-    <!--                            <span>Profession</span>-->
-    <!--                        </div>-->
-    <!--                        <div class="text-center">-->
-    <!--                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>-->
-    <!--                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>-->
-    <!--                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">-->
-    <!--                            <h5 class="font-weight-bold m-0">Client Name</h5>-->
-    <!--                            <span>Profession</span>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!-- Testimonial End -->
-
-    <!-- Contact Start -->
-    <!--    <div class="container-fluid py-5" id="contact">-->
-    <!--        <div class="container">-->
-    <!--            <div class="position-relative d-flex align-items-center justify-content-center">-->
-    <!--                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6; font-size:clamp(50px, 5vw, 96px) !important;">Contact Me</h1>-->
-    <!--            </div>-->
-    <!--            <div class="row justify-content-center">-->
-    <!--                <div class="col-lg-8">-->
-    <!--                    <div class="contact-form text-center">-->
-    <!--                        <div id="success"></div>-->
-    <!--                        <form name="sentMessage" id="contactForm" novalidate="novalidate">-->
-    <!--                            <div class="form-row">-->
-    <!--                                <div class="control-group col-sm-6">-->
-    <!--                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"-->
-    <!--                                        required="required" data-validation-required-message="Please enter your name" />-->
-    <!--                                    <p class="help-block text-danger"></p>-->
-    <!--                                </div>-->
-    <!--                                <div class="control-group col-sm-6">-->
-    <!--                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"-->
-    <!--                                        required="required" data-validation-required-message="Please enter your email" />-->
-    <!--                                    <p class="help-block text-danger"></p>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-    <!--                            <div class="control-group">-->
-    <!--                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"-->
-    <!--                                    required="required" data-validation-required-message="Please enter a subject" />-->
-    <!--                                <p class="help-block text-danger"></p>-->
-    <!--                            </div>-->
-    <!--                            <div class="control-group">-->
-    <!--                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"-->
-    <!--                                    required="required"-->
-    <!--                                    data-validation-required-message="Please enter your message"></textarea>-->
-    <!--                                <p class="help-block text-danger"></p>-->
-    <!--                            </div>-->
-    <!--                            <div>-->
-    <!--                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send-->
-    <!--                                    Message</button>-->
-    <!--                            </div>-->
-    <!--                        </form>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!-- Contact End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-1 px-sm-3 px-md-5">
-        <div class="container text-center py-1">
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Levend Abdyli</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">Levend Abdyli</a>
-            </p>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Scroll to Bottom -->
-    <a href="#about"><i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i></a>
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-
-</html>
+<!--            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">-->
+<!--                <div class="timeline-text">-->
+<!--                    <div class="timeline-date">2045 - 2050</div>-->
+<!--                    <h2>Web Developer</h2>-->
+<!--                    <h4>Soft Agency, San Francisco, CA</h4>-->
+<!--                    <p>-->
+<!--                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">-->
+<!--                <div class="timeline-text">-->
+<!--                    <div class="timeline-date">2045 - 2050</div>-->
+<!--                    <h2>Web Developer</h2>-->
+<!--                    <h4>Soft Agency, San Francisco, CA</h4>-->
+<!--                    <p>-->
+<!--                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">-->
+<!--                <div class="timeline-text">-->
+<!--                    <div class="timeline-date">2045 - 2050</div>-->
+<!--                    <h2>Web Developer</h2>-->
+<!--                    <h4>Soft Agency, San Francisco, CA</h4>-->
+<!--                    <p>-->
+<!--                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">-->
+<!--                <div class="timeline-text">-->
+<!--                    <div class="timeline-date">2045 - 2050</div>-->
+<!--                    <h2>Web Developer</h2>-->
+<!--                    <h4>Soft Agency, San Francisco, CA</h4>-->
+<!--                    <p>-->
+<!--                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">-->
+<!--                <div class="timeline-text">-->
+<!--                    <div class="timeline-date">2045 - 2050</div>-->
+<!--                    <h2>Web Developer</h2>-->
+<!--                    <h4>Soft Agency, San Francisco, CA</h4>-->
+<!--                    <p>-->
+<!--                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--&lt;!&ndash; Job Experience End &ndash;&gt;-->
