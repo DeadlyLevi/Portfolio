@@ -23,14 +23,14 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
     </head>
-
+    
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-light navbar-light nav-sticky">
             <div class="container-fluid">
                 <!-- ADD IMAGE HERE -->
                 <a href="index.html" class="navbar-brand d-flex align-items-center">
-                    <img src="img/about.jpg" alt="Profile" style="width:50px; height:50px; border-radius:50%; object-fit:cover; margin-right:10px;">
+                    <!--<img src="img/about.jpg" alt="Profile" style="width:50px; height:50px; border-radius:50%; object-fit:cover; margin-right:10px;">-->
                     Levend Abdyli
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -39,11 +39,9 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#about" class="nav-item nav-link active">Home</a>
+                        <a href="#project" class="nav-item nav-link">Projects</a>
                         <a href="#skills" class="nav-item nav-link">Skills</a>
-                        <a href="#experience" class="nav-item nav-link">Experience</a>
-                        <a href="#project" class="nav-item nav-link">Project</a>
                     </div>
                 </div>
             </div>
@@ -55,8 +53,7 @@
                     <div class="col-12">
                         <div class="about-content">
                             <div class="section-header text-center">
-                                <p>ABOUT me</p>
-                                <h2>10 Years Experience</h2>
+                                <span class="section-label">ABOUT ME</span>
                             </div>
                             <div class="about-text">
                                 <p>
@@ -81,165 +78,162 @@
         <div class="project" id="project">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                  <p>Projects</p>
-                  <h2>All my works</h2>
-                </div>
-                <div class="row">
-                  <div class="col-12 col-md-6 mb-4">
-                    <div class="project-item" style="background-image: url('img/zed.jpg')">
-                      <div class="w-100 p-3 translated-multicolor" style="height: 45%;display: flex;flex-direction: column;justify-content: space-around;position:absolute;z-index: 11;">
-                        <div class="row mb-3 align-items-center">
-                          <div class="col-5 text-center">
-                            <img src="img/lol.png" alt="Logo" class="img-fluid" style="max-width: 100px;">
-                          </div>
-                          <div class="col-7">
-                            <p class="mb-0 text-white ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                          </div>
-                        </div>
-                        <div class="row align-items-center">
-                          <div class="col-5 text-center">
-                            <p class="mb-0 text-white small">30.11.2022</p>
-                          </div>
-                          <div class="col-6 text-end ml-4">
-                            <a class="card-btn" href="game.html?game=0">MORE GAME INFO</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-md-6 mb-4">
-                    <div class="project-item" style="background-image: url('img/zed.jpg')">
-                      <div class="w-100 p-3 translated-multicolor" style="height: 45%;display: flex;flex-direction: column;justify-content: space-around;position:absolute;z-index: 11;">
-                        <div class="row mb-3 align-items-center">
-                          <div class="col-5 text-center">
-                            <img src="img/lol.png" alt="Logo" class="img-fluid" style="max-width: 100px;">
-                          </div>
-                          <div class="col-7">
-                            <p class="mb-0 text-white ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                          </div>
-                        </div>
-                        <div class="row align-items-center">
-                          <div class="col-5 text-center">
-                            <p class="mb-0 text-white small">30.11.2022</p>
-                          </div>
-                          <div class="col-6 text-end ml-4">
-                            <a class="card-btn" href="game.html?game=1">MORE GAME INFO</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    <span class="section-label">PROJECTS</span>
                 </div>
 
-                <div class="row">
-                    <div class="col-12 col-md-6 mb-4">
-                      <div class="project-item" style="background-image: url('img/zed.jpg')">
-                        <div class="w-100 p-3 translated-multicolor" style="height: 45%;display: flex;flex-direction: column;justify-content: space-around;position:absolute;z-index: 11;">
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-5 text-center">
-                              <img src="img/lol.png" alt="Logo" class="img-fluid" style="max-width: 100px;">
-                            </div>
-                            <div class="col-7">
-                              <p class="mb-0 text-white ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                          </div>
-                          <div class="row align-items-center">
-                            <div class="col-5 text-center">
-                              <p class="mb-0 text-white small">30.11.2022</p>
-                            </div>
-                            <div class="col-6 text-end ml-4">
-                              <a class="card-btn" href="game.html?game=2">MORE GAME INFO</a>
-                            </div>
-                          </div>
-                        </div>
+                <div class="row mb-4">
+
+                  <div class="col-12 col-md-5 relative p-0 m-0 scale-bigger">
+                    <a href="game.html?game=0">
+                      <video muted loop playsinline class="w-100 h-100" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
+                        <source src="img/gif.mp4" type="video/mp4">
+                        Il tuo browser non supporta i video HTML5.
+                      </video>
+                      <div class="gapper">
+                        <img src="icons/cplusplus.svg" alt="C++ Logo">
+                        <img src="icons/cplusplus.svg" alt="C++ Logo">
+                        <img src="icons/cplusplus.svg" alt="C++ Logo">
                       </div>
-                    </div>
-  
-                    <div class="col-12 col-md-6 mb-4">
-                      <div class="project-item" style="background-image: url('img/zed.jpg')">
-                        <div class="w-100 p-3 translated-multicolor" style="height: 45%;display: flex;flex-direction: column;justify-content: space-around;position:absolute;z-index: 11;">
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-5 text-center">
-                              <img src="img/lol.png" alt="Logo" class="img-fluid" style="max-width: 100px;">
-                            </div>
-                            <div class="col-7">
-                              <p class="mb-0 text-white ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                          </div>
-                          <div class="row align-items-center">
-                            <div class="col-5 text-center">
-                              <p class="mb-0 text-white small">30.11.2022</p>
-                            </div>
-                            <div class="col-6 text-end ml-4">
-                              <a class="card-btn" href="game.html?game=3">MORE GAME INFO</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    </a>
                   </div>
+
+                  <div class="col-md-1"></div>
+
+                  <div class="col-12 col-md-5 relative p-0 m-0 scale-bigger">
+                    <a href="game.html?game=1">
+                      <video muted loop playsinline class="w-100 h-100" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
+                        <source src="img/gif.mp4" type="video/mp4">
+                        Il tuo browser non supporta i video HTML5.
+                      </video>
+                      <div class="gapper">
+                        <img src="icons/cplusplus.svg" alt="C++ Logo">
+                        <img src="icons/cplusplus.svg" alt="C++ Logo">
+                        <img src="icons/cplusplus.svg" alt="C++ Logo">
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+                  
+                <div class="row">
+
+                  <div class="col-12 col-md-5 relative p-0 m-0 scale-bigger">
+                    <a href="game.html?game=2">
+                      <video muted loop playsinline class="w-100 h-100" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
+                        <source src="img/gif.mp4" type="video/mp4">
+                        Il tuo browser non supporta i video HTML5.
+                      </video>
+                      <div class="gapper">
+                        <img src="icons/cplusplus.svg" alt="C++ Logo">
+                        <img src="icons/cplusplus.svg" alt="C++ Logo">
+                        <img src="icons/cplusplus.svg" alt="C++ Logo">
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-1"></div>
+
+                  <div class="col-12 col-md-5 relative p-0 m-0 scale-bigger">
+                    <a href="game.html?game=3">
+                      <video muted loop playsinline class="w-100 h-100" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
+                        <source src="img/gif.mp4" type="video/mp4">
+                        Il tuo browser non supporta i video HTML5.
+                      </video>
+                      <div class="gapper">
+                        <img src="icons/cplusplus.svg" alt="C++ Logo">
+                        <img src="icons/cplusplus.svg" alt="C++ Logo">
+                        <img src="icons/cplusplus.svg" alt="C++ Logo">
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+                
             </div>
         </div>
         <!-- project End -->
-        
+
         <!-- Service Start -->
         <div class="service" id="skills">
-            <div class="container">
+            <div class="container d-flex flex-column align-items-center">
 
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <p>My Skills</p>
                 </div>
 
                 <!-- Programming Languages & Scripting -->
-                <div class="row">
-                    <p>Programming Languages & Scripting</p>
-                    <img src="icons/cplusplus.svg" alt="C++ Logo" width="70" height="70">
-                    <img src="icons/csharp.svg" alt="C# Logo" width="70" height="70">
-                    <img src="icons/c.svg" alt="C Logo" width="70" height="70">
-                    <img src="icons/python.svg" alt="Python Logo" width="70" height="70">
-                    <img src="icons/lua.svg" alt="Lua Logo" width="70" height="70">
-                    <img src="icons/javascript.svg" alt="JavaScript Logo" width="70" height="70">
-                    <img src="icons/hlsl.svg" alt="JavaScript Logo" width="70" height="70">
+                <div class="d-flex flex-column align-items-center mb-5">
+                    <div class="text-center mb-2">
+                        <h4>Programming Languages & Scripting</h4>
+                    </div>
+                    <div class="d-flex justify-content-around gapper">
+                        <div class="svg-logo" data-src="icons/cplusplus.svg" aria-label="C++ Logo"></div>
+                        <div class="svg-logo" data-src="icons/csharp.svg" aria-label="C# Logo"></div>
+                        <div class="svg-logo" data-src="icons/c.svg" aria-label="C Logo"></div>
+                        <div class="svg-logo" data-src="icons/python.svg" aria-label="Python Logo"></div>
+                        <div class="svg-logo" data-src="icons/lua.svg" aria-label="Lua Logo"></div>
+                        <div class="svg-logo" data-src="icons/javascript.svg" aria-label="JavaScript Logo"></div>
+                        <div class="svg-logo" data-src="icons/hlsl.svg" aria-label="HLSL Logo"></div>
+                    </div>
                 </div>
 
                 <!-- Game Engines & Graphics APIs -->
-                <div class="row">
-                    <p>Game Engines & Graphics APIs</p>
-                    <img src="icons/unrealengine.svg" alt="Unreal Engine Logo" width="70" height="70">
-                    <img src="icons/unity.svg" alt="Unity Logo" width="70" height="70">
-                    <img src="icons/opengl.svg" alt="OpenGL Logo" width="70" height="70">
-                    <img src="icons/vulkan.svg" alt="Vulkan Logo" width="70" height="70">
-                    <img src="icons/sdl.svg" alt="SDL Logo" width="70" height="70">
+                <div class="d-flex flex-column align-items-center mb-5">
+                    <div class="text-center mb-2">
+                        <h4>Game Engines & Graphics APIs</h4>
+                    </div>
+                    <div class="d-flex justify-content-around gapper">
+                        <div class="svg-logo" data-src="icons/unrealengine.svg" aria-label="Unreal Engine Logo"></div>
+                        <div class="svg-logo" data-src="icons/unity.svg" aria-label="Unity Logo"></div>
+                        <div class="svg-logo" data-src="icons/opengl.svg" aria-label="OpenGL Logo"></div>
+                        <div class="svg-logo" data-src="icons/vulkan.svg" aria-label="Vulkan Logo"></div>
+                        <div class="svg-logo" data-src="icons/sdl.svg" aria-label="SDL Logo"></div>
+                    </div>
                 </div>
 
                 <!-- Version Control & Project Management -->
-                <div class="row">
-                    <p>Version Control & Project Management</p>
-                    <img src="icons/git.svg" alt="Git Logo" width="70" height="70">
-                    <img src="icons/github.svg" alt="GitHub Logo" width="70" height="70">
-                    <img src="icons/trello.svg" alt="Trello Logo" width="70" height="70">
+                <div class="d-flex flex-column align-items-center mb-5">
+                    <div class="text-center mb-2">
+                        <h4>Version Control & Project Management</h4>
+                    </div>
+                    <div class="d-flex justify-content-around gapper">
+                        <div class="svg-logo" data-src="icons/git.svg" aria-label="Git Logo"></div>
+                        <div class="svg-logo" data-src="icons/github.svg" aria-label="GitHub Logo"></div>
+                        <div class="svg-logo" data-src="icons/trello.svg" aria-label="Trello Logo"></div>
+                    </div>
                 </div>
 
                 <!-- Development Tools & IDEs -->
-                <div class="row">
-                    <p>Development Tools & IDEs</p>
-                    <img src="icons/visualstudio.svg" alt="Visual Studio Logo" width="70" height="70">
-                    <img src="icons/vscode.svg" alt="VSCode Logo" width="70" height="70">
-                    <img src="icons/clion.svg" alt="CLion Logo" width="70" height="70">
-                    <img src="icons/rider.svg" alt="Rider Logo" width="70" height="70">
+                <div class="d-flex flex-column align-items-center mb-5">
+                    <div class="text-center mb-2">
+                        <h4>Development Tools & IDEs</h4>
+                    </div>
+                    <div class="d-flex justify-content-around gapper">
+                        <div class="svg-logo" data-src="icons/visualstudio.svg" aria-label="Visual Studio Logo"></div>
+                        <div class="svg-logo" data-src="icons/vscode.svg" aria-label="VSCode Logo"></div>
+                        <div class="svg-logo" data-src="icons/clion.svg" aria-label="CLion Logo"></div>
+                        <div class="svg-logo" data-src="icons/rider.svg" aria-label="Rider Logo"></div>
+                    </div>
                 </div>
 
                 <!-- Web & UI Technologies -->
-                <div class="row">
-                    <p>Web & UI Technologies</p>
-                    <img src="icons/html5.svg" alt="HTML5 Logo" width="70" height="70">
+                <div class="d-flex flex-column align-items-center mb-5">
+                    <div class="text-center mb-2">
+                        <h4>Web & UI Technologies</h4>
+                    </div>
+                    <div class="d-flex justify-content-around gapper">
+                        <div class="svg-logo" data-src="icons/html5.svg" aria-label="HTML5 Logo"></div>
+                    </div>
                 </div>
 
                 <!-- Art & Asset Tools -->
-                <div class="row">
-                    <p>Art & Asset Tools</p>
-                    <img src="icons/blender.svg" alt="Blender Logo" width="70" height="70">
+                <div class="d-flex flex-column align-items-center mb-5">
+                    <div class="text-center mb-2">
+                        <h4>Art & Asset Tools</h4>
+                    </div>
+                    <div class="d-flex justify-content-around gapper">
+                        <div class="svg-logo" data-src="icons/blender.svg" aria-label="Blender Logo"></div>
+                    </div>
                 </div>
 
             </div>
@@ -278,6 +272,44 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script>
+          function playVideo(element) {
+            console.log("Element: ",element);
+            element.play();
+          }
+        
+          function pauseVideo(element) {
+            element.pause();
+          }
+        </script>
+
+        <!-- Dynamic SVG Injection Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelectorAll('.svg-logo').forEach(el => {
+                    const src = el.dataset.src;
+                    fetch(src)
+                        .then(res => {
+                            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                            return res.text();
+                        })
+                        .then(text => {
+                            el.innerHTML = text;
+                            const svg = el.querySelector('svg');
+                            if (svg) {
+                                svg.setAttribute('role', 'img');
+                                svg.setAttribute('aria-label', el.getAttribute('aria-label'));
+                                svg.classList.add('custom-icon'); // VERY IMPORTANT
+                            }
+                        })
+                        .catch(err => {
+                            console.error(`Error loading ${src}:`, err);
+                            el.innerHTML = `<span style="color:red">⚠️</span>`;
+                        });
+                });
+            });
+        </script>
+
+
     </body>
 </html>
-

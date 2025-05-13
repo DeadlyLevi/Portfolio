@@ -6,8 +6,8 @@ html{
 }
 
 body {
-    color: #FFFFFF;
-    background: #2A7B9B;
+    color: #001219;
+    background: #E9D8A6;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -17,7 +17,7 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #FFFFFF;
+    color: #001219;
 }
 
 a {
@@ -80,7 +80,7 @@ a:focus {
 
 .card-btn:hover {
     background: transparent;
-    box-shadow: inset 0 0 0 0 inherit;
+    box-shadow: inset 0 0 0 0 #000000;
     color: #FFFFFF;
 }
 
@@ -205,7 +205,7 @@ a:focus {
     
     .navbar.nav-sticky {
         padding: 30px 60px;
-        background: #000000 !important;
+        background: #94D2BD !important;
     }
     
     .navbar .navbar-brand {
@@ -438,50 +438,18 @@ a:focus {
 /******* Section Header ********/
 /*******************************/
 .section-header {
-    position: relative;
+    text-align: center;
     margin-bottom: 45px;
 }
 
-.section-header p {
-    display: inline-block;
-    margin: 0 30px;
-    margin-bottom: 10px;
-    padding-left: 15px;
-    position: relative;
+.section-label {
+    display: block; /* ensures it goes on its own line */
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background: #000000;
-}
-
-.section-header p::before {
-    position: absolute;
-    content: "";
-    height: 3px;
-    top: 11px;
-    right: 0;
-    left: -30px;
-    background: #ff0000;
-    z-index: -1;
-}
-
-.section-header p::after {
-    position: absolute;
-    content: "";
-    width: 3px;
-    height: 3px;
-    top: 11px;
-    left: 3px;
-    background: #ff0000;
-    z-index: 1;
-}
-
-.section-header h2 {
-    margin: 0;
-    position: relative;
-    font-size: 45px;
-    font-weight: 700;
+    margin-bottom: 10px;
+    color: inherit; /* or choose a color you want */
 }
 
 @media (max-width: 767.98px) {
@@ -955,7 +923,6 @@ a:focus {
 }
 
 .banner .section-header p {
-    color: #FFFFFF;
     background: transparent;
 }
 
@@ -968,7 +935,6 @@ a:focus {
 }
 
 .banner .section-header h2 span {
-    color: #FFFFFF;
     font-size: 50px;
 }
 
@@ -1483,7 +1449,6 @@ a:focus {
 
 .project-item {
     width: 100%;
-    aspect-ratio: 16 / 9;/*4/3*/
     border-radius: 20px; /* più elegante */
     display: flex;
     align-items: flex-end;
@@ -1498,7 +1463,7 @@ a:focus {
     border-radius: 0 0 20px 20px;
   }
   
-  .project-item::after{
+  /*.project-item::after{
     content: '';
     position: absolute;
     top: 60%;
@@ -1517,7 +1482,7 @@ a:focus {
     top: 50%;
     border-radius: 0;
     transform: rotate(0);
-  }
+  }*/
 
 /*******************************/
 /********* Footer CSS **********/
@@ -1667,4 +1632,106 @@ a:focus {
     width: 100%;
     aspect-ratio: 16/9;
     margin-bottom: 25px;
+}
+
+#skills .gapper{
+    column-gap:30px;
+}
+
+.gapper img{
+    width: 50px;
+    height: 50px;
+}
+
+#project .gapper img{
+    width: 30px;
+    height: 30px;
+}
+
+#project .project-item{
+    overflow: hidden; display: flex; align-items: flex-end; transition: 0.2s; cursor: pointer;
+}
+
+#project .project-item:hover{
+    transform: scale(1.05);
+}
+
+.video-background-container video{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+}
+
+.video-background-container{
+    height: 100%;
+}
+
+.project-item {
+    position: relative;
+    height: 100%; /* o metti ad es. 200px se necessario */
+  }
+  
+  #project .gapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    column-gap: 10px;
+    background-color: rgba(255,0,0,0.6);
+  }
+  
+
+@media only screen and (max-width: 600px) {
+    #skills .gapper{
+        column-gap:10px;
+    }
+
+    .gapper img{
+        width: 35px;
+        height: 35px;
+    }
+
+    #skills h4{
+        font-size:16px;
+    }
+}
+
+.scale-bigger{
+    transition: .2s;
+}
+.scale-bigger:hover{
+    transform: scale(1.05);
+}
+
+.svg-logo svg {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+
+#skills path{
+    /*fill: #000000 !important;*/
+}
+
+.custom-icon{
+    color: #0A9396;
+    transition: color 0.3s ease;
+}
+
+.custom-icon:hover {
+    color: #005F73;
+}
+
+.section-label {
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: inherit;
+    display: block; /* or inline if needed */
+    margin-bottom: 5px;
 }
