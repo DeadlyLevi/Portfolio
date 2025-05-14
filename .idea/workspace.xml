@@ -5,40 +5,93 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="654b696a-7092-453b-b8e3-6566ecd3ead3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/abletonlive.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/audacity.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/css.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/cv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/docker.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/dx11.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/figma.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/fmod.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/gaea.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/github_ci_cd.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/githubactions.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/gnubash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/magicavoxel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/photoshop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/react.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/wwise.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/projectA.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/projectB.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/READ-ME.txt" beforeDir="false" afterPath="$PROJECT_DIR$/READ-ME.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games.json" beforeDir="false" afterPath="$PROJECT_DIR$/games.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/c.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/c.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/clion.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/clion.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/csharp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/csharp.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/aseprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/aseprite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/blender.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/blender.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/cplusplus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/cplusplus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/discord.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/discord.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/dotnet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/dotnet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/git.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/git.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/github.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/github.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/gmail.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/gmail.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/icons/hlsl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/hlsl.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/html5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/html5.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/lua.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/lua.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/sdl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/sdl.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/visualstudio.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/visualstudio.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/javascript.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/javascript.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/jira.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/jira.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/opengl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/opengl.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/perforce.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/perforce.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/postgresql.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/postgresql.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/python.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/python.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/rider.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/rider.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/steam.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/steam.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/trello.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/trello.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/typescript.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/typescript.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/unity.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/unity.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/unrealengine.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/unrealengine.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/vscode.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/vscode.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/vulkan.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons/vulkan.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/about.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/contact.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/gif.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hero-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/lol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/portfolio-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/portfolio-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/portfolio-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/portfolio-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/portfolio-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/portfolio-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/team-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/team-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/team-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/team-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/testimonial-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/testimonial-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/testimonial-3.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/animate/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/animate/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/animate/animate.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/lib/animate/animate.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/easing/easing.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/easing/easing.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lightbox/links.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/lightbox/links.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/waypoints/links.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/waypoints/links.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/wow/wow.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/wow/wow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/wow/wow.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/wow/wow.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$APPLICATION_HOME_DIR$/lib/app.jar!/resources/html5-schema/html5/block.rnc" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -50,9 +103,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/My/Projects/GIT/Home/Portfolio/icons&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -81,6 +136,14 @@
       <workItem from="1747124516247" duration="1362000" />
       <workItem from="1747126070885" duration="341000" />
       <workItem from="1747126696555" duration="1697000" />
+      <workItem from="1747130422844" duration="6115000" />
+      <workItem from="1747153876020" duration="124000" />
+      <workItem from="1747161515963" duration="7742000" />
+      <workItem from="1747208733788" duration="8048000" />
+      <workItem from="1747217089143" duration="1699000" />
+      <workItem from="1747218815306" duration="129000" />
+      <workItem from="1747218953070" duration="1671000" />
+      <workItem from="1747222925746" duration="37000" />
     </task>
     <servers />
   </component>

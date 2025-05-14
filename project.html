@@ -7,9 +7,6 @@
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
-
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -41,7 +38,7 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="#game-description" class="nav-item nav-link">Description</a>
+                        <a href="#project-description" class="nav-item nav-link">Description</a>
                     </div>
                 </div>
             </div>
@@ -54,7 +51,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <div class="hero-text" style="padding: 150px 0;">
-                            <h1 style="color: #FFFFFF; text-align: center; text-shadow: 1px 1px 5px #000;">Game 0</h1>
+                            <h1 style="color: #FFFFFF; text-align: center; text-shadow: 1px 1px 5px #000;">Project 0</h1>
                         </div>
                     </div>
                 </div>
@@ -64,7 +61,7 @@
         
 
         <!-- Description Start -->
-        <div class="container game-description" id="game-description">
+        <div class="container project-description" id="project-description">
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8"></div>
@@ -111,44 +108,58 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-    </body>
-    <script>
-        document.addEventListener('DOMContentLoaded', async () => {
-          const urlParams = new URLSearchParams(window.location.search);
-          const gameId = urlParams.get('game');
-        
-          if (!gameId) {
-            console.error('Nessun game specificato nella query!');
-            return;
-          }
-        
-          try {
-            const response = await fetch('games.json');
-            const games = await response.json();
-            const game = games.find(g => g.id === gameId);
-        
-            if (!game) {
-              console.error('Game non trovato!');
-              return;
-            }
-        
-            // 1. Cambia lo sfondo dell'hero
-            const hero = document.querySelector('.hero');
-            hero.style.backgroundImage = `url('${game.immagine}')`;
-        
-            // 2. Cambia il titolo principale <h1>
-            const heroTitle = hero.querySelector('h1');
-            heroTitle.innerText = game.titolo;
-        
-            // 3. Inserisci il contenuto dentro .game-description .col-8
-            const gameContent = document.querySelector('.game-description .col-8');
-            gameContent.innerHTML = game.contenuto;
-        
-            // 4. Esegui di nuovo l'highlight del codice (DEVE essere dopo aver iniettato l'HTML)
-            hljs.highlightAll();
-          } catch (error) {
-            console.error('Errore caricando i dati:', error);
-          }
-        });
-    </script>               
+
+        <script>
+            document.addEventListener('DOMContentLoaded', async () => {
+                console.log("🟢 DOM loaded");
+
+                const urlParams = new URLSearchParams(window.location.search);
+                const projectId = urlParams.get('project');
+                console.log("🔍 project param:", projectId);
+
+                if (!projectId) {
+                    console.error('❌ No project parameter in URL');
+                    return;
+                }
+
+                try {
+                    const response = await fetch('projects.json');
+                    console.log("📦 projects.json fetch response:", response);
+
+                    if (!response.ok) throw new Error('Failed to fetch projects.json');
+
+                    const projects = await response.json();
+                    console.log("✅ Parsed JSON:", projects);
+
+                    const project = projects.find(p => p.id === projectId);
+                    console.log("🎯 Found project:", project);
+
+                    if (!project) {
+                        console.error('❌ Project not found in JSON');
+                        return;
+                    }
+
+                    // Update hero
+                    const hero = document.querySelector('.hero');
+                    hero.style.backgroundImage = `url('${project.immagine}')`;
+                    hero.querySelector('h1').innerText = project.titolo;
+
+                    // Fetch content HTML
+                    const contentResponse = await fetch(project.contenutoFile);
+                    console.log("📄 HTML content fetch response:", contentResponse);
+
+                    if (!contentResponse.ok) throw new Error('Failed to fetch content file');
+
+                    const html = await contentResponse.text();
+                    document.querySelector('.project-description .col-8').innerHTML = html;
+
+                    hljs.highlightAll();
+                } catch (err) {
+                    console.error('🔥 JS error:', err);
+                }
+            });
+        </script>
+
+
+    </body>         
 </html>

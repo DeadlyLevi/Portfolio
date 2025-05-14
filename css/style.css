@@ -6,8 +6,8 @@ html{
 }
 
 body {
-    color: #001219;
-    background: #E9D8A6;
+    color: #c9ada7;
+    background: #22223b;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -17,7 +17,7 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #001219;
+    color: #c9ada7;
 }
 
 a {
@@ -167,7 +167,7 @@ a:focus {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 100;
 }
 
@@ -205,15 +205,11 @@ a:focus {
     
     .navbar.nav-sticky {
         padding: 30px 60px;
-        background: #94D2BD !important;
+        background: #9a8c98 !important;
     }
     
     .navbar .navbar-brand {
         color: #000000;
-    }
-    
-    .navbar.nav-sticky .navbar-brand {
-        color: #FFFFFF;
     }
 
     .navbar-light .navbar-nav .nav-link,
@@ -1487,11 +1483,7 @@ a:focus {
 /*******************************/
 /********* Footer CSS **********/
 /*******************************/
-.footer {
-    position: relative;
-    margin-top: 45px;
-    background: #ff0000;
-}
+
 
 .footer .container-fluid {
     padding: 0 0 0 0;
@@ -1709,23 +1701,40 @@ a:focus {
     transform: scale(1.05);
 }
 
-.svg-logo svg {
-    width: 60px;
-    height: 60px;
+.custom-icon {
+    width: 45px;
+    height: 45px;
+    color: inherit;
     display: inline-block;
-}
-
-#skills path{
-    /*fill: #000000 !important;*/
-}
-
-.custom-icon{
-    color: #0A9396;
     transition: color 0.3s ease;
 }
 
-.custom-icon:hover {
-    color: #005F73;
+.header-section .custom-icon {
+    transform-origin: center;
+    transform: scale(0.8);
+    color: #22223b;
+}
+
+
+.header-section .custom-icon:hover {
+    transform: scale(0.9);
+    color: #f2e9e4;
+}
+
+.skills-section .custom-icon {
+    transform-origin: center;
+    transform: scale(1.33);
+    color: #c9ada7;
+}
+
+
+.skills-section .custom-icon:hover {
+    transform: scale(1.50);
+    color: #f2e9e4;
+}
+
+.white-icon .custom-icon {
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .section-label {
@@ -1734,4 +1743,59 @@ a:focus {
     font-family: inherit;
     display: block; /* or inline if needed */
     margin-bottom: 5px;
+}
+
+/* Video & Projects*/
+
+.project-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-video {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.6); /* black, semi-transparent */
+    padding: 0.5rem;
+    z-index: 1;
+}
+
+.tech-icon {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1); /* make icons white/bright on dark bg */
+    opacity: 0.9;
+    transition: transform 0.2s ease;
+}
+
+.tech-icon:hover {
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+/*NAV BAR*/
+.navbar.nav-sticky .navbar-brand {
+    color: #22223b;
+}
+
+.footer {
+    position: relative;
+    margin-top: 45px;
+    background: #9a8c98;
 }

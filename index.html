@@ -30,7 +30,6 @@
             <div class="container-fluid">
                 <!-- ADD IMAGE HERE -->
                 <a href="index.html" class="navbar-brand d-flex align-items-center">
-                    <!--<img src="img/about.jpg" alt="Profile" style="width:50px; height:50px; border-radius:50%; object-fit:cover; margin-right:10px;">-->
                     Levend Abdyli
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -39,9 +38,11 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="#about" class="nav-item nav-link active">Home</a>
-                        <a href="#project" class="nav-item nav-link">Projects</a>
-                        <a href="#skills" class="nav-item nav-link">Skills</a>
+                        <a href="https://www.linkedin.com/in/levendabdyli/" target="_blank" ><div class="header-section custom-icon" data-src="icons/linkedin.svg"></div></a>
+                        <a href="https://github.com/DeadlyLevi" target="_blank" ><div class="header-section custom-icon" data-src="icons/github.svg"></div></a>
+                        <a href="mailto:levendabdyli1355@gmail.com" target="_blank" ><div class="header-section custom-icon" data-src="icons/gmail.svg" title="levendabdyli1355@gmail.com"></div></a>
+                        <a href="https://discord.gg/KNQWBq7wN8" target="_blank" ><div class="header-section custom-icon" data-src="icons/discord.svg" title="deadly_levi"></div></a>
+                        <a href="cv/Abdyli_Levend_CV_eng.pdf" download target="_blank" ><div class="header-section custom-icon" data-src="icons/cv.svg"></div></a>
                     </div>
                 </div>
             </div>
@@ -77,80 +78,54 @@
         <!-- project Start -->
         <div class="project" id="project">
             <div class="container">
+
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <span class="section-label">PROJECTS</span>
                 </div>
 
-                <div class="row mb-4">
+                <div class="row justify-content-center">
 
-                  <div class="col-12 col-md-5 relative p-0 m-0 scale-bigger">
-                    <a href="game.html?game=0">
-                      <video muted loop playsinline class="w-100 h-100" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
-                        <source src="img/gif.mp4" type="video/mp4">
-                        Il tuo browser non supporta i video HTML5.
-                      </video>
-                      <div class="gapper">
-                        <img src="icons/cplusplus.svg" alt="C++ Logo">
-                        <img src="icons/cplusplus.svg" alt="C++ Logo">
-                        <img src="icons/cplusplus.svg" alt="C++ Logo">
-                      </div>
-                    </a>
-                  </div>
+                    <!-- Project Card -->
+                    <div class="col-12 col-md-6 col-lg-5 mb-4">
+                        <a href="project.html?project=0" class="project-card d-block position-relative overflow-hidden">
+                            <video muted loop playsinline class="w-100 project-video"
+                                   onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
+                                <source src="img/gif.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
 
-                  <div class="col-md-1"></div>
+                            <!-- Overlay band -->
+                            <div class="project-overlay d-flex justify-content-center align-items-center gap-2">
+                                <div class="white-icon custom-icon" data-src="icons/unrealengine.svg" aria-label="Unreal Engine Logo"></div>
+                                <div class="white-icon custom-icon" data-src="icons/cplusplus.svg" aria-label="Unreal Engine Logo"></div>
+                                <div class="white-icon custom-icon" data-src="icons/perforce.svg" aria-label="Unreal Engine Logo"></div>
+                            </div>
+                        </a>
+                    </div>
 
-                  <div class="col-12 col-md-5 relative p-0 m-0 scale-bigger">
-                    <a href="game.html?game=1">
-                      <video muted loop playsinline class="w-100 h-100" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
-                        <source src="img/gif.mp4" type="video/mp4">
-                        Il tuo browser non supporta i video HTML5.
-                      </video>
-                      <div class="gapper">
-                        <img src="icons/cplusplus.svg" alt="C++ Logo">
-                        <img src="icons/cplusplus.svg" alt="C++ Logo">
-                        <img src="icons/cplusplus.svg" alt="C++ Logo">
-                      </div>
-                    </a>
-                  </div>
 
-                </div>
-                  
-                <div class="row">
+                    <!-- Repeat cards -->
+                    <div class="col-12 col-md-6 col-lg-5 mb-4">
+                        <a href="project.html?project=1" class="project-card d-block position-relative overflow-hidden">
+                            <video muted loop playsinline class="w-100 project-video"
+                                   onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
+                                <source src="img/gif.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
 
-                  <div class="col-12 col-md-5 relative p-0 m-0 scale-bigger">
-                    <a href="game.html?game=2">
-                      <video muted loop playsinline class="w-100 h-100" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
-                        <source src="img/gif.mp4" type="video/mp4">
-                        Il tuo browser non supporta i video HTML5.
-                      </video>
-                      <div class="gapper">
-                        <img src="icons/cplusplus.svg" alt="C++ Logo">
-                        <img src="icons/cplusplus.svg" alt="C++ Logo">
-                        <img src="icons/cplusplus.svg" alt="C++ Logo">
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="col-md-1"></div>
-
-                  <div class="col-12 col-md-5 relative p-0 m-0 scale-bigger">
-                    <a href="game.html?game=3">
-                      <video muted loop playsinline class="w-100 h-100" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
-                        <source src="img/gif.mp4" type="video/mp4">
-                        Il tuo browser non supporta i video HTML5.
-                      </video>
-                      <div class="gapper">
-                        <img src="icons/cplusplus.svg" alt="C++ Logo">
-                        <img src="icons/cplusplus.svg" alt="C++ Logo">
-                        <img src="icons/cplusplus.svg" alt="C++ Logo">
-                      </div>
-                    </a>
-                  </div>
+                            <!-- Overlay band -->
+                            <div class="project-overlay d-flex justify-content-center align-items-center gap-2">
+                                <div class="white-icon custom-icon" data-src="icons/unrealengine.svg" aria-label="Unreal Engine Logo"></div>
+                                <div class="white-icon custom-icon" data-src="icons/cplusplus.svg" aria-label="Unreal Engine Logo"></div>
+                                <div class="white-icon custom-icon" data-src="icons/perforce.svg" aria-label="Unreal Engine Logo"></div>
+                            </div>
+                        </a>
+                    </div>
 
                 </div>
-                
             </div>
         </div>
+
         <!-- project End -->
 
         <!-- Service Start -->
@@ -158,22 +133,23 @@
             <div class="container d-flex flex-column align-items-center">
 
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Skills</p>
+                    <span class="section-label">SKILLS</span>
                 </div>
 
-                <!-- Programming Languages & Scripting -->
+                <!-- Programming & Scripting -->
                 <div class="d-flex flex-column align-items-center mb-5">
                     <div class="text-center mb-2">
-                        <h4>Programming Languages & Scripting</h4>
+                        <h4>Programming & Scripting</h4>
                     </div>
                     <div class="d-flex justify-content-around gapper">
-                        <div class="svg-logo" data-src="icons/cplusplus.svg" aria-label="C++ Logo"></div>
-                        <div class="svg-logo" data-src="icons/csharp.svg" aria-label="C# Logo"></div>
-                        <div class="svg-logo" data-src="icons/c.svg" aria-label="C Logo"></div>
-                        <div class="svg-logo" data-src="icons/python.svg" aria-label="Python Logo"></div>
-                        <div class="svg-logo" data-src="icons/lua.svg" aria-label="Lua Logo"></div>
-                        <div class="svg-logo" data-src="icons/javascript.svg" aria-label="JavaScript Logo"></div>
-                        <div class="svg-logo" data-src="icons/hlsl.svg" aria-label="HLSL Logo"></div>
+                        <div class="skills-section custom-icon" data-src="icons/cplusplus.svg" title="C Plus Plus"></div>
+                        <div class="skills-section custom-icon" data-src="icons/csharp.svg" title="C Sharp"></div>
+                        <div class="skills-section custom-icon" data-src="icons/c.svg" title="SVG"></div>
+                        <div class="skills-section custom-icon" data-src="icons/python.svg" title="Python"></div>
+                        <div class="skills-section custom-icon" data-src="icons/javascript.svg" title="JavaScript"></div>
+                        <div class="skills-section custom-icon" data-src="icons/typescript.svg" title="TypeScript"></div>
+                        <div class="skills-section custom-icon" data-src="icons/lua.svg" title="Lua"></div>
+                        <div class="skills-section custom-icon" data-src="icons/hlsl.svg" title="HLSL"></div>
                     </div>
                 </div>
 
@@ -183,56 +159,92 @@
                         <h4>Game Engines & Graphics APIs</h4>
                     </div>
                     <div class="d-flex justify-content-around gapper">
-                        <div class="svg-logo" data-src="icons/unrealengine.svg" aria-label="Unreal Engine Logo"></div>
-                        <div class="svg-logo" data-src="icons/unity.svg" aria-label="Unity Logo"></div>
-                        <div class="svg-logo" data-src="icons/opengl.svg" aria-label="OpenGL Logo"></div>
-                        <div class="svg-logo" data-src="icons/vulkan.svg" aria-label="Vulkan Logo"></div>
-                        <div class="svg-logo" data-src="icons/sdl.svg" aria-label="SDL Logo"></div>
+                        <div class="skills-section custom-icon" data-src="icons/unrealengine.svg" title="UnrealEngine5"></div>
+                        <div class="skills-section custom-icon" data-src="icons/unity.svg" title="Unity"></div>
                     </div>
                 </div>
 
+                <!-- Graphics APIs & Low Level Frameworks -->
+                <div class="d-flex flex-column align-items-center mb-5">
+                    <div class="text-center mb-2">
+                        <h4>Graphics APIs & Low Level Frameworks</h4>
+                    </div>
+                    <div class="d-flex justify-content-around gapper">
+                        <div class="skills-section custom-icon" data-src="icons/opengl.svg" title="OpenGL"></div>
+                        <div class="skills-section custom-icon" data-src="icons/vulkan.svg" title="Vulkan"></div>
+                        <div class="skills-section custom-icon" data-src="icons/sdl.svg" title="SDL"></div>
+                        <div class="skills-section custom-icon" data-src="icons/dx11.svg" title="DirectX 11"></div>
+                    </div>
+                </div>
+
+                <!-- Graphics & Visuals -->
+                <div class="d-flex flex-column align-items-center mb-5">
+                    <div class="text-center mb-2">
+                        <h4>Graphics & Visuals</h4>
+                    </div>
+                    <div class="d-flex justify-content-around gapper">
+                        <div class="skills-section custom-icon" data-src="icons/blender.svg" title="Blender"></div>
+                        <div class="skills-section custom-icon" data-src="icons/photoshop.svg" title="PhotoShop"></div>
+                        <div class="skills-section custom-icon" data-src="icons/aseprite.svg" title="Aseprite"></div>
+                        <div class="skills-section custom-icon" data-src="icons/gaea.svg" title="GAEA"></div>
+                        <div class="skills-section custom-icon" data-src="icons/magicavoxel.svg" title="Magica Voxel"></div>
+                    </div>
+                </div>
+
+                <!-- Sound & Audio -->
+                <div class="d-flex flex-column align-items-center mb-5">
+                    <div class="text-center mb-2">
+                        <h4>Sound & Audio</h4>
+                    </div>
+                    <div class="d-flex justify-content-around gapper">
+                        <div class="skills-section custom-icon" data-src="icons/abletonlive.svg" title="Ableton Live"></div>
+                        <div class="skills-section custom-icon" data-src="icons/audacity.svg" title="Audacity"></div>
+                        <div class="skills-section custom-icon" data-src="icons/fmod.svg" title="FMOD"></div>
+                        <div class="skills-section custom-icon" data-src="icons/wwise.svg" title="Wwise"></div>
+                    </div>
+                </div>
+
+                <!--  UI/UX & Web -->
+                <div class="d-flex flex-column align-items-center mb-5">
+                    <div class="text-center mb-2">
+                        <h4>UI/UX & Web</h4>
+                    </div>
+                    <div class="d-flex justify-content-around gapper">
+                        <div class="skills-section custom-icon" data-src="icons/figma.svg" title="Figma"></div>
+                        <div class="skills-section custom-icon" data-src="icons/html5.svg" title="HTML 5"></div>
+                        <div class="skills-section custom-icon" data-src="icons/css.svg" title="CSS"></div>
+                        <div class="skills-section custom-icon" data-src="icons/javascript.svg" title="JavaScript"></div>
+                        <div class="skills-section custom-icon" data-src="icons/react.svg" title="React"></div>
+                    </div>
+                </div>
+                
                 <!-- Version Control & Project Management -->
                 <div class="d-flex flex-column align-items-center mb-5">
                     <div class="text-center mb-2">
                         <h4>Version Control & Project Management</h4>
                     </div>
                     <div class="d-flex justify-content-around gapper">
-                        <div class="svg-logo" data-src="icons/git.svg" aria-label="Git Logo"></div>
-                        <div class="svg-logo" data-src="icons/github.svg" aria-label="GitHub Logo"></div>
-                        <div class="svg-logo" data-src="icons/trello.svg" aria-label="Trello Logo"></div>
+                        <div class="skills-section custom-icon" data-src="icons/git.svg" title="Git"></div>
+                        <div class="skills-section custom-icon" data-src="icons/github.svg" title="GitHub"></div>
+                        <div class="skills-section custom-icon" data-src="icons/perforce.svg" title="HelixCore - Perforce"></div>
+                        <div class="skills-section custom-icon" data-src="icons/jira.svg" title="Jira"></div>
+                        <div class="skills-section custom-icon" data-src="icons/trello.svg" title="Trello"></div>
                     </div>
                 </div>
 
-                <!-- Development Tools & IDEs -->
+                <!-- Tools & Utilities -->
                 <div class="d-flex flex-column align-items-center mb-5">
                     <div class="text-center mb-2">
-                        <h4>Development Tools & IDEs</h4>
+                        <h4>Tools & Utilities</h4>
                     </div>
                     <div class="d-flex justify-content-around gapper">
-                        <div class="svg-logo" data-src="icons/visualstudio.svg" aria-label="Visual Studio Logo"></div>
-                        <div class="svg-logo" data-src="icons/vscode.svg" aria-label="VSCode Logo"></div>
-                        <div class="svg-logo" data-src="icons/clion.svg" aria-label="CLion Logo"></div>
-                        <div class="svg-logo" data-src="icons/rider.svg" aria-label="Rider Logo"></div>
-                    </div>
-                </div>
-
-                <!-- Web & UI Technologies -->
-                <div class="d-flex flex-column align-items-center mb-5">
-                    <div class="text-center mb-2">
-                        <h4>Web & UI Technologies</h4>
-                    </div>
-                    <div class="d-flex justify-content-around gapper">
-                        <div class="svg-logo" data-src="icons/html5.svg" aria-label="HTML5 Logo"></div>
-                    </div>
-                </div>
-
-                <!-- Art & Asset Tools -->
-                <div class="d-flex flex-column align-items-center mb-5">
-                    <div class="text-center mb-2">
-                        <h4>Art & Asset Tools</h4>
-                    </div>
-                    <div class="d-flex justify-content-around gapper">
-                        <div class="svg-logo" data-src="icons/blender.svg" aria-label="Blender Logo"></div>
+                        <div class="skills-section custom-icon" data-src="icons/visualstudio.svg" title="Visual Studio"></div>
+                        <div class="skills-section custom-icon" data-src="icons/rider.svg" title="Rider"></div>
+                        <div class="skills-section custom-icon" data-src="icons/docker.svg" title="Docker"></div>
+                        <div class="skills-section custom-icon" data-src="icons/githubactions.svg" title="GitHub Actions"></div>
+                        <div class="skills-section custom-icon" data-src="icons/github_ci_cd.svg" title="GitHub CI/CD"></div>
+                        <div class="skills-section custom-icon" data-src="icons/postgresql.svg" title="Postgre SQL"></div>
+                        <div class="skills-section custom-icon" data-src="icons/gnubash.svg" title="GNU Bash"></div>
                     </div>
                 </div>
 
@@ -286,7 +298,7 @@
         <!-- Dynamic SVG Injection Script -->
         <script>
             document.addEventListener('DOMContentLoaded', () => {
-                document.querySelectorAll('.svg-logo').forEach(el => {
+                document.querySelectorAll('.custom-icon').forEach(el => {
                     const src = el.dataset.src;
                     fetch(src)
                         .then(res => {

@@ -1,0 +1,16 @@
+﻿<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <mask id="text-mask">
+            <!-- White background: visible -->
+            <rect width="64" height="64" fill="white"/>
+            <!-- Cut-out text: centered "MV" -->
+            <text x="32" y="48%" font-family="Segoe UI, sans-serif" font-size="26" font-weight="bold"
+                  text-anchor="middle" dominant-baseline="central" fill="black">
+                MV
+            </text>
+        </mask>
+    </defs>
+
+    <!-- Colored background with transparent "MV" -->
+    <rect width="64" height="64" rx="12" fill="currentColor" mask="url(#text-mask)"/>
+</svg>

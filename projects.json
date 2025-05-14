@@ -1,0 +1,16 @@
+[
+  {
+    "id": "0",
+    "titolo": "Project A",
+    "immagine": "img/zed.jpg",
+    "contenutoFile": "pages/projectA.html"
+  },
+  {
+    "id": "1",
+    "titolo": "Project B",
+    "immagine": "img/zed.jpg",
+    "contenutoFile": "pages/projectB.html"
+  }
+]
+
+  
